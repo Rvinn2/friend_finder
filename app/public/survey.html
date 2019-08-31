@@ -7,16 +7,161 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Survery</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <h1>Show Survey</h1>
+        <body alt="Chain of paper friends in circle">
+            <div class="container">
+                <div class="jumbotron">
         
-        <script src="" async defer></script>
+                    <h1>Friend Finder Survey</h1>
+                    <hr>
+                    <h4>Answer a few basic questions.</h4>
+                    <h4>Then find the friend with the greatest compatibility!</h4>
+                    <hr>
+        
+                    <form>
+                        <div class="form-group">
+                            <label for="userName">Your Name (Required)</label>
+                            <input type="text" class="form-control" id="friendName" placeholder="Enter Your Name">
+                        </div>
+                        <!-- <div class="form-group">
+                            <label for="exampleInputPassword1">Link to Photo Image (Required)</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1 friendImg">
+                        </div> -->
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile02 ">
+                                <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                            </div>
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="friendImg">Upload</span>
+                            </div>
+                        </div>
+                        <hr>
+        
+                        <h5>Instructions: Read question then answer it by choosing a number between 1 (Strongly Disagree) and 5 (Strongly Agree) from the dropdown.</h5>
+                        <br>
+                        <div class="form-group">
+                            <label for="question1">Question 1: You like outdoors.</label>
+                            <select class="form-control" id="question1">
+                                <option value>Select an option</option>
+                                <option value=1>1 (Strongly Disagree)</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="question2">Question 2: You prefer football over basketball</label>
+                            <select class="form-control" id="question2">
+                                <option value>Select an option</option>
+                                <option value=1>1 (Strongly Disagree)</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="question3">Question 3: You enjoy tailgating more than sports bars.</label>
+                            <select class="form-control" id="question3">
+                                <option value>Select an option</option>
+                                <option value=1>1 (Strongly Disagree)</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="question4">Question 4: You prefer watching sports live.</label>
+                            <select class="form-control" id="question4">
+                                <option value>Select an option</option>
+                                <option value=1>1 (Strongly Disagree)</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="question5">Question 5: You're likely to watch NFL over NCAA.</label>
+                            <select class="form-control" id="question5">
+                                <option value>Select an option</option>
+                                <option value=1>1 (Strongly Disagree)</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="question6">Question 6: Youre likely to watch NCAA over NBA.</label>
+                            <select class="form-control" id="question6">
+                                <option value>Select an option</option>
+                                <option value=1>1 (Strongly Disagree)</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="question7">Question 7: You enjoy large social groups.</label>
+                            <select class="form-control" id="question7">
+                                <option value>Select an option</option>
+                                <option value=1>1 (Strongly Disagree)</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="question8">Question 8: Tom Brady is the greatest QB of all time.</label>
+                            <select class="form-control" id="question8">
+                                <option value>Select an option</option>
+                                <option value=1>1 (Strongly Disagree)</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="question9">Question 9: Michale Jordan is the greatest athlete.</label>
+                            <select class="form-control" id="question9">
+                                <option value>Select an option</option>
+                                <option value=1>1 (Strongly Disagree)</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="question10">Question 10: I hate sports.</label>
+                            <select class="form-control" id="question10">
+                                <option value>Select an option</option>
+                                <option value=1>1 (Strongly Disagree)</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5 (Strongly Agree)</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary submit"><i class="far fa-check-square"></i> Submit Survey</button>
+                    </form>
+        
+                </div>
+            </div>
     </body>
 </html>
