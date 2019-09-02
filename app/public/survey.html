@@ -22,7 +22,7 @@
                     <h1>Friend Finder Survey</h1>
                     <hr>
                     <h4>Answer a few basic questions.</h4>
-                    <h4>Then find the friend with the greatest compatibility!</h4>
+                    
                     <hr>
         
                     <form>
@@ -34,14 +34,10 @@
                             <label for="exampleInputPassword1">Link to Photo Image (Required)</label>
                             <input type="password" class="form-control" id="exampleInputPassword1 friendImg">
                         </div> -->
-                        <div class="input-group mb-3">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="inputGroupFile02 ">
-                                <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
-                            </div>
-                            <div class="input-group-append">
+                        <input class="form-control form-control-sm" type="text" placeholder="link to your photo">
+                            <!-- <div class="input-group-append">
                                 <span class="input-group-text" id="friendImg">Upload</span>
-                            </div>
+                            </div> -->
                         </div>
                         <hr>
         
@@ -165,3 +161,61 @@
             </div>
     </body>
 </html>
+
+
+<script type= "text/javascript">
+
+$(".submit").on("click", function(event) {
+
+		event.preventDefault();
+		alert("Thank you for submitting to the FriendFinder Survey");
+		
+		var friends = {
+	        newName: $("#friendName").val().trim(),
+	        newImg: $("#friendImg").val().trim(),
+	       	scores: [
+	       		$("#question1").val(),
+	        	$("#question2").val(),
+	       		$("#question3").val(),
+	        	$("#question4").val(),
+	        	$("#question5").val(),
+	        	$("#question6").val(),
+	        	$("#question7").val(),
+	       		$("#question8").val(),
+	        	$("#question9").val(),
+	        	$("#question10").val()
+	        ]
+    };
+    
+    $.post("/api/friends", friends,
+        function(data) {
+	        
+	        if (data) {
+	            
+	            $('#bestName').text(data.name);
+          		$('#bestImg').attr("src", data.img).addClass("img-fluid");
+	            //show modal with best friend match
+	    		$('#executeModal').modal('toggle');        
+	  	   		
+          	}
+          
+          	else {
+            	alert("Something went wrong.");
+          	}
+			
+			$("#friendName").val("");
+			$("#friendImg").val("");
+			$("#question1").val("");
+			$("#question2").val("");
+			$("#question3").val("");
+			$("#question4").val("");
+			$("#question5").val("");
+			$("#question6").val("");
+			$("#question7").val("");
+			$("#question8").val("");
+			$("#question9").val("");
+			$("#question10").val("");
+        });
+	});	
+
+</script>

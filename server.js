@@ -11,42 +11,42 @@ var PORT = process.env.PORT || 3000;
 
 var friends = [
   {
-      name: "Woody",
-      photo: "https://images.app.goo.gl/Z9QhD5pqCycLkan48",
+      name: "MJ",
+      photo: "https://images.app.goo.gl/pUuFJiztZJaRwRXQ9",
       scores: [5,1,4,4,5,1,2,5,4,4]
   },
   
   {
-      name: "Person9",
-      photo: "img.https://images.app.goo.gl/Z9QhD5pqCycLkan48",
+      name: "Tom B.",
+      photo: "https://images.app.goo.gl/AbMsh4xMELpff9Ak6",
       scores: [5,1,4,4,5,1,2,5,4,4]
   },
   
   {
-      name: "Person7",
-      photo: "https://images.app.goo.gl/Z9QhD5pqCycLkan48",
+      name: "Lebron James",
+      photo: "https://images.app.goo.gl/QaprFQySAgxw4iNt9",
       scores: [5,1,4,4,5,1,2,5,4,4]
   },
   
   {
-      name: "person6",
-      photo: "https://images.app.goo.gl/Z9QhD5pqCycLkan48",
+      name: "Kobe Bryant",
+      photo: "https://images.app.goo.gl/ThNaRcM8UvkwMeP59",
       scores: [5,1,4,4,5,1,2,5,4,4]
   },
   {
-      name: "Person5",
-      photo: "https://images.app.goo.gl/Z9QhD5pqCycLkan48",
+      name: "Russell Wilson",
+      photo: "https://images.app.goo.gl/tZ19acA62ajXk7eeA",
       scores: [5,1,4,4,5,1,2,5,4,4]
   },
   
   {
-      name: "person3",
-      photo: "https://images.app.goo.gl/Z9QhD5pqCycLkan48",
+      name: "Matt Ryan",
+      photo: "https://images.app.goo.gl/9iLfMPzFWC9ezKSj8",
       scores: [5,1,4,4,5,1,2,5,4,4]
   },
   {
-      name: "person4",
-      photo: "https://images.app.goo.gl/Z9QhD5pqCycLkan48",
+      name: "Barak Obama",
+      photo: "https://images.app.goo.gl/KhN67RVZKnnPp9Ro7",
       scores: [5,1,4,4,5,1,2,5,4,4]
   },
   ];
